@@ -1,13 +1,13 @@
 #!/bin/bash
-output=$(curl -I http://develbook.com)
+output=$(curl -I http://myserver.com)
 hasil=${output:0:15}
 if [ "${hasil}" != "HTTP/1.1 200 OK" ];
 
 then
 
 # send mail
-From="info@bukuaku.com"
-To="nitzaalfinas@gmail.com"
+From="info@myserver.com"
+To="mymail@something.com"
 Subject="server down"
 Msg="Server is down boy!"
 cat <<EOF | sendmail -i -t
