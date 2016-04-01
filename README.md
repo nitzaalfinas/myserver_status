@@ -1,2 +1,2 @@
 # myserver_status
-This application can be used to check the server status. If the server is down, the app will send you an email
+This application can be use to check the server status. If the server is down, the app will send you an email
